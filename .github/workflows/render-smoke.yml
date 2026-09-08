@@ -1,0 +1,23 @@
+name: render-smoke
+
+on:
+  push: { branches: [main] }
+  pull_request:
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: templates/explainer-starter } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm install
+      - run: npx remotion browser ensure
+      - run: npm run typecheck
+      - name: Render QA clip (10s @ half scale)
+        run: npx remotion render Main out/smoke.mp4 --frames=0-300 --scale=0.5
+      - uses: actions/upload-artifact@v4
+        with:
+          name: smoke-mp4
+          path: templates/explainer-starter/out/smoke.mp4

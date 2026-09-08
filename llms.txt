@@ -1,0 +1,43 @@
+# remotion-ai-hub
+
+> Central hub for making videos with Remotion using AI coding agents: ZCode (GLM 5.3 Flash), Claude Code, OpenCode, Trae, Codex. Guides, prompts, agent skills, templates, QA tools, gotchas.
+
+Remotion is React-for-video: frame-perfect programmatic video rendered server-side. This hub connects it to AI coding agents with everything needed to go from prompt to finished MP4.
+
+## Start here
+
+- Quick start: `npx create-video --yes --blank my-video && cd my-video && npm i && npx skills add remotion-dev/skills`
+- Agent guides: docs/agents/zcode-glm.md (GLM 5.3 Flash, deepest), docs/agents/claude-code.md, docs/agents/opencode.md, docs/agents/trae.md
+- Architecture patterns: docs/patterns.md
+- Headless rendering gotchas: docs/gotchas.md
+- Curated links: docs/resources.md
+
+## Prompts (copy-paste)
+
+- prompts/01-scaffold.md — scaffold a project brief
+- prompts/02-explainer.md — multi-scene explainer
+- prompts/03-subtitles.md — burnt-in subtitles
+- prompts/04-brand-kit.md — brand-locked styling
+- prompts/05-data-driven.md — data.ts driven videos
+- prompts/06-qa-fix-loop.md — render-verify-fix loop
+
+## Tools
+
+- tools/remotion-qa.mjs — post-render QA: blank/frozen frame detection, duration check
+- tools/agent-rules/remotion-rules.md — paste into any agent's rules file
+
+## Templates
+
+- templates/explainer-starter/ — working multi-scene TypeScript starter
+
+## Official resources
+
+- Docs: https://www.remotion.dev/docs (append .md for markdown, e.g. https://www.remotion.dev/docs/player.md)
+- AI docs: https://www.remotion.dev/docs/ai
+- Official agent skills: https://www.remotion.dev/docs/ai/skills (npx skills add remotion-dev/skills)
+- Coding agents workflow: https://www.remotion.dev/docs/ai/coding-agents
+- License: https://www.remotion.dev/docs/license
+
+## Keywords
+
+remotion, ai video, programmatic video, react video, ai agents, claude code, zcode, glm, glm 5.3 flash, trae, opencode, codex, motion graphics, text-to-video, agent skills, skills.sh, mcp, video automation, llm video, render mp4
