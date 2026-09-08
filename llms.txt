@@ -20,6 +20,14 @@ Remotion is React-for-video: frame-perfect programmatic video rendered server-si
 - prompts/04-brand-kit.md — brand-locked styling
 - prompts/05-data-driven.md — data.ts driven videos
 - prompts/06-qa-fix-loop.md — render-verify-fix loop
+- prompts/07-vertical-short.md — 1080x1920 Shorts with safe zones
+- prompts/08-lambda-cloud.md — Remotion Lambda cloud rendering
+
+## Examples
+
+- examples/README.md — real rendered frames + clip from the starter template
+- examples/frames/*.jpg — scene keyframes (actual Remotion renders)
+- examples/demo-clip.mp4 — 8-second clip, rendered at 1/3 scale
 
 ## Tools
 

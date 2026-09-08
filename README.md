@@ -49,12 +49,22 @@ Full per-agent walkthroughs: **[ZCode + GLM](docs/agents/zcode-glm.md) · [Claud
 
 ---
 
+## 🎬 Examples (rendered by this workflow)
+
+Real output from [`templates/explainer-starter/`](templates/explainer-starter/) — generated end-to-end by the hub's prompts, zero manual timeline editing:
+
+| Intro | Problem | Solution | CTA |
+|---|---|---|---|
+| ![Intro](examples/frames/scene1.jpg) | ![Problem](examples/frames/scene2.jpg) | ![Solution](examples/frames/scene3.jpg) | ![CTA](examples/frames/scene4.jpg) |
+
+▶️ **[Watch the 8-second clip](examples/demo-clip.mp4)** · Full walkthrough in [examples/README.md](examples/README.md)
+
 ## 📦 What's in the hub
 
 | Folder | Contents |
 |---|---|
 | [`docs/`](docs/) | Guides: per-agent setups, architecture patterns, gotchas, curated resources |
-| [`prompts/`](prompts/) | Battle-tested copy-paste prompts: explainer videos, subtitles, brand kits, data-driven videos, QA-fix loops |
+| [`prompts/`](prompts/) | Battle-tested copy-paste prompts: explainer videos, subtitles, brand kits, data-driven videos, vertical Shorts, Lambda cloud rendering, QA-fix loops |
 | [`skills/remotion-agent/`](skills/remotion-agent/) | Portable agent skill (SKILL.md) — drop into any agent's skills folder |
 | [`templates/explainer-starter/`](templates/explainer-starter/) | Working multi-scene explainer starter (TypeScript, scenes, transitions) |
 | [`tools/`](tools/) | `remotion-qa.mjs` render QA (blank-frame / frozen-frame detection) + agent rules file |
